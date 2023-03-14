@@ -5,33 +5,29 @@
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.hero_container{
+.hero{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   padding: 0 2em;
 }
 
 .hero_image{
   margin: 3em 0;
   max-width: 100%;
+  align-self: center;
 }
 
 .hero_title{
   font-size: 3em;
   font-weight: 600;
   line-height: 40px;
-  margin: 0 0 1em 0;
+
 }
 
 .hero_text{
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1em;
-  margin: 0 0 0.5em 0;
   max-width: 500px;
-}
-
-.text{
-  margin: 0 0 0 2em;
+  margin: 1em 0 0 0;
 }

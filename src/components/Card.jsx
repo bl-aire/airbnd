@@ -1,20 +1,23 @@
 import star from '../assets/star.png'
-import smile from '../assets/smile.png'
 
-export default function Card() {
+export default function Card(props) {
+    console.log(props)
     return (
         <div className='card'>
-            <div className='image_bg'>
+            {/*<div className='image_bg' style={{backgroundImage: `url{props.img}`, height: `355px`}}>
                 <button className='sold-out'>Sold out</button>
+            </div>*/}
+            <div>
+                <img src={props.img} alt="" height="355px" />
             </div>
             <span className='rating'>
                 <img src={star} alt="star icon" className='star' />
-                <span>5.0</span>
-                <span>(6) • </span>
-                <span>USA</span>
+                <span>{props.r1}</span>
+                <span>{props.r2}</span>
+                <span>{props.location}</span>
             </span>
-            <p>Life lessons with Katie Zaferes</p>
-            <p><b>From $136</b> / person</p>
+            <p>{props.title}</p>
+            <p><b>From {props.price}</b> / person</p>
         </div>
     )
 }

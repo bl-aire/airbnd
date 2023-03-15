@@ -44,11 +44,11 @@ section{
   margin: 3em 0;
 }
 
-.image_bg{
+/*.image_bg{
   background-image: url("../src/assets/smile.png") ;
   background-repeat: no-repeat;
   height: 355px;
-}
+}*/
 
 .rating{
   display: flex;

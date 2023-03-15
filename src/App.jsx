@@ -14,26 +14,26 @@ function App() {
       <Card 
         img={smile}
         r1="5.0"
-        r2="(6) . "
+        r2={6}
         location="USA"
         title="Life lessons with Katie Zaferes"
-        price="$136"
+        price={136}
       />
       <Card 
         img={wedding}
         r1="5.0"
-        r2="(30) . "
+        r2={30}
         location="USA"
         title="Learn wedding photography"
-        price="$125"
+        price={125}
       />
       <Card 
         img={bike}
         r1="4.8"
-        r2="(2) . "
+        r2={2}
         location="USA"
         title="Group Mountain Biking"
-        price="$50"
+        price={50}
       />
     </div>
   )

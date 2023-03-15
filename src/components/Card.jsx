@@ -12,12 +12,12 @@ export default function Card({img, r1, r2, location, title, price}) {
             </div>
             <span className='rating'>
                 <img src={star} alt="star icon" className='star' />
-                <span>{r1}</span>
-                <span>{r2}</span>
+                <span className='rate'>{r1}</span>
+                <span>({r2}) . </span>
                 <span>{location}</span>
             </span>
             <p>{title}</p>
-            <p><b>From {price}</b> / person</p>
+            <p><b>From ${price}</b> / person</p>
         </div>
     )
 }

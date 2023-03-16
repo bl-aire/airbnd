@@ -1,13 +1,17 @@
 import star from '../../public/images/star.png'
 
 export default function Card({img, rating, reviewCount, location, title, price, openSpots}) {
-    
+    let badgeText
+    if (openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (location === "Online") {
+        badgeText = "ONLINE"
+    }
+
     return (
         <div className='card'>
-            {/*<div className='image_bg' style={{backgroundImage: `url{props.img}`, height: `355px`}}>
-                <button className='sold-out'>Sold out</button>
-            </div>*/}
-            {openSpots === 0 && <div className='badge'>SOLD OUT</div>}
+            
+            {badgeText && <div className='badge'>{badgeText}</div>}
             <img src={img} alt="" height="300px" className='card_img' />
             
             <span className='rating'>

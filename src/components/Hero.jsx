@@ -1,4 +1,4 @@
-import group from '../assets/Group.png'
+import group from '../../public/images/Group.png'
 
 export default function Hero() {
     return(

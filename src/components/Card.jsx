@@ -1,4 +1,4 @@
-import star from '../assets/star.png'
+import star from '../../public/images/star.png'
 
 export default function Card({img, r1, r2, location, title, price}) {
     

@@ -1,9 +1,9 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Card from './components/Card'
-import smile from '../src/assets/smile.png'
-import wedding from '../src/assets/wedding.png'
-import bike from '../src/assets/bike.png'
+import smile from '../public/images/smile.png'
+import wedding from '../public/images/wedding.png'
+import bike from '../public/images/bike.png'
 import './App.css'
 
 function App() {

@@ -1,40 +1,32 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Card from './components/Card'
-import smile from '../public/images/smile.png'
-import wedding from '../public/images/wedding.png'
-import bike from '../public/images/bike.png'
+
+import data from './CardData'
 import './App.css'
 
+
 function App() {
+
+
+  const cards = data.map(item => {
+    return (
+      <Card 
+        img={item.coverImg}
+        rating={item.stats.rating}
+        reviewCount={item.stats.reviewCount}
+        location={item.location}
+        title={item.title}
+        price={item.price}
+      />
+    )
+  })
+
   return (
     <div className="App">
       <Nav />
       <Hero />
-      <Card 
-        img={smile}
-        r1="5.0"
-        r2={6}
-        location="USA"
-        title="Life lessons with Katie Zaferes"
-        price={136}
-      />
-      <Card 
-        img={wedding}
-        r1="5.0"
-        r2={30}
-        location="USA"
-        title="Learn wedding photography"
-        price={125}
-      />
-      <Card 
-        img={bike}
-        r1="4.8"
-        r2={2}
-        location="USA"
-        title="Group Mountain Biking"
-        price={50}
-      />
+      {cards}
     </div>
   )
 }

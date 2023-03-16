@@ -42,6 +42,29 @@ section{
 
 .card{
   margin: 3em 0;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card_img{
+  border-radius: 20px;
+}
+
+.card_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card_price {
+  margin-top: auto;
 }
 
 /*.image_bg{

@@ -1,6 +1,9 @@
-import star from '../../public/images/star.png'
+import star from '../../src/images/star.png'
 
-export default function Card({img, rating, reviewCount, location, title, price, openSpots}) {
+export default function Card(props) {
+
+    const {img, rating, reviewCount, location, title, price, openSpots} = props
+
     let badgeText
     if (openSpots === 0) {
         badgeText = "SOLD OUT"
